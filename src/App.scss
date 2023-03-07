@@ -6,19 +6,6 @@
   padding-block: var(--size-700);
 }
 
-.container {
-  --max-width: 1110px;
-  --padding: 1rem;
-
-  width: min(var(--max-width), 100% - var(--padding) * 2);
-  margin-inline: auto;
-}
-
-.even-columns {
-  display: grid;
-  gap: 1rem;
-}
-
 @media (min-width: 50em) {
   .even-columns {
     grid-auto-flow: column;
@@ -33,6 +20,7 @@ body {
 }
 
 .button {
+  cursor: pointer;
   display: inline-flex;
   border: 0;
   text-decoration: none;
@@ -167,4 +155,20 @@ body {
   .display-md-inline-flex {
     display: inline-flex;
   }
+}
+
+/* Footer */
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Projects Page */
+
+.tool-logos {
+  display: flex;
+  gap: 1rem;
+}
+
+.cards {
 }

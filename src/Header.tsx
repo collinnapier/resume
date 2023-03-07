@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isToggled, toggle] = useState(false);
@@ -7,9 +8,9 @@ export default function Header() {
     <header className='primary-header' data-overlay={isToggled}>
       <div className='container'>
         <div className='nav-wrapper'>
-          <a href='#' className='logo'>
+          <Link to='' className='logo'>
             Collin Napier
-          </a>
+          </Link>
           <button
             className='mobile-nav-toggle'
             aria-controls='primary-navigation'
@@ -38,16 +39,44 @@ export default function Header() {
           >
             <ul role={"list"} className='nav-list'>
               <li>
-                <a href='#'>About Me</a>
+                <Link
+                  to={"aboutme"}
+                  onClick={() => {
+                    toggle(!isToggled);
+                  }}
+                >
+                  About Me
+                </Link>
               </li>
               <li>
-                <a href='#'>Projects</a>
+                <Link
+                  to={"projects"}
+                  onClick={() => {
+                    toggle(!isToggled);
+                  }}
+                >
+                  Projects
+                </Link>
               </li>
               <li>
-                <a href='#'>Employment</a>
+                <Link
+                  to={"employment"}
+                  onClick={() => {
+                    toggle(!isToggled);
+                  }}
+                >
+                  Employment
+                </Link>
               </li>
               <li>
-                <a href='#'>Contact</a>
+                <Link
+                  to={"contact"}
+                  onClick={() => {
+                    toggle(!isToggled);
+                  }}
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </nav>
