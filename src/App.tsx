@@ -1,40 +1,19 @@
-import { useState } from "react";
-import "./App.css";
+import "./App.scss";
+import Header from "./Header";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className='App'>
-      <header className='primary-header'>
-        <div className='container'>
-          <a href='#'>Collin Napier</a>
-          <nav className='primary-navigation'>
-            <ul role={"list"} className='nav-list'>
-              <li>
-                <a href='#'>About Me</a>
-              </li>
-              <li>
-                <a href='#'>Projects</a>
-              </li>
-              <li>
-                <a href='#'>Employment</a>
-              </li>
-              <li>
-                <a href='#'>Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <button className='button'>Resume</button>
-        </div>
-      </header>
+      <Header />
+
       <main>
-        <section>
+        <section className='padding-block-900'>
           <div className='container'>
             <div className='even-columns'>
               <div>
                 <h1 className='fs-primary-heading fw-bold'>
-                  I'm Collin Napier
+                  {/* I'm Collin Napier */}
+                  Lorem, Ipsum Dolor.
                 </h1>
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -48,17 +27,22 @@ function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section className='bg-accent-400 text-neutral-100 padding-block-700'>
           <div className='container'>
             <div className='even-columns'>
               <div>
                 <h2 className='fs-secondary-heading fw-bold'>Hi There.</h2>
               </div>
+              <div>
+                <button className='button' data-type='inverted'>
+                  Lorem
+                </button>
+              </div>
             </div>
           </div>
         </section>
       </main>
-      <footer className='bg-neutral-900 text-neutral-100'>
+      <footer className='padding-block-700 bg-neutral-900 text-neutral-100'>
         <div className='container'>
           <div className='even-columns'>
             <div>
