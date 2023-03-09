@@ -1,52 +1,59 @@
+import "./projects.scss";
+
 export default function Projects() {
   return (
-    <main>
-      <section className='padding-block-900'>
-        <div className='container'>
-          <div className='even-columns'>
-            <div>
-              <img src='computer.svg' alt='' />
-            </div>
-            <div>
-              <h2>This Website!</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
-                voluptatum exercitationem voluptas repellat commodi deserunt
-                rerum sunt doloribus libero! Libero commodi neque atque. Tempora
-                veniam voluptatibus eos amet harum nostrum.
-              </p>
-              <div className='tool-logos'>
-                <img src='img/angular.svg' alt='' />
-                <img src='img/js.svg' alt='' />
-                <img src='img/html5.svg' alt='' />
-                <img src='img/css3.svg' alt='' />
-                <img src='img/github-mark-white.svg' alt='' />
-              </div>
+    <main className='padding-block-900 container'>
+      <h1 className='fs-primary-heading fw-bold'>Projects</h1>
+      <section className=''>
+        <div className='card'>
+          <div>
+            <img src='computer.svg' alt='' />
+          </div>
+          <div className='card-info'>
+            <h2 className='fs-secondary-heading fw-bold'>This Website!</h2>
+            <p>
+              This site was created with HTML5, CSS3, and TypeScript in the
+              React Framework. You can visit my GitHub profile at the bottom of
+              the page and click the resume project to view the source code to
+              this project!
+            </p>
+            <div className='card-tools'>
+              <img src='img/angular.svg' alt='' />
+              <img src='img/js.svg' alt='' />
+              <img src='img/html5.svg' alt='' />
+              <img src='img/css3.svg' alt='' />
+              <img src='img/github-mark.svg' alt='' />
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div className='container'>
-          <div className='even-columns'>
-            <div>
-              <img src='img/logo-billr.svg' alt='' />
-            </div>
-            <div>
-              <h2>Billr</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Recusandae esse aliquam aperiam amet laborum commodi optio
-                dolore id blanditiis. Hic dolorum perspiciatis, minus saepe
-                eligendi nostrum eaque dignissimos nobis nam.
-              </p>
-              <div className='tool-logos'>
-                <img src='img/react.svg' alt='' />
-                <img src='img/js.svg' alt='' />
-                <img src='img/html5.svg' alt='' />
-                <img src='img/css3.svg' alt='' />
-                <img src='img/github-mark-white.svg' alt='' />
-              </div>
+        <div className='card'>
+          <div>
+            <img src='img/logo-billr.svg' alt='' />
+          </div>
+          <div className='card-info'>
+            <h2 className='fs-secondary-heading fw-bold'>Billr</h2>
+            <p>
+              Billr is a web app I created for my grandmother to increase her
+              productivity. It takes Excel timesheets and generates invoices
+              using the pricing provided by her company for employee hours and
+              materials used. Due to the human nature of the timesheets string
+              comparision is used to determine which items the employees mean on
+              their timesheets. Over the last year this has saved her hundreds
+              of hours compared to the old way of doing it by hand. The web app
+              was created with HTML5, CSS3, and TypeScript in the Angular
+              Framework. User authentication and database storage is done with
+              Firebase Authentication and Firestore. unfortunately, I cannot
+              show the source of this project as it contains confidential
+              company information.
+            </p>
+            <div className='card-tools'>
+              <img src='img/react.svg' alt='' />
+              <img src='img/js.svg' alt='' />
+              <img src='img/html5.svg' alt='' />
+              <img src='img/css3.svg' alt='' />
+              <img src='img/github-mark.svg' alt='' />
             </div>
           </div>
         </div>

@@ -32,6 +32,7 @@ body {
   color: var(--clr-neutral-100);
   background-color: var(--clr-accent-400);
   box-shadow: 0 1em 1.125em -1em var(--clr-accent-400);
+  transition: 0.4s;
 }
 
 .button[data-type="inverted"] {
@@ -161,14 +162,4 @@ body {
 .flex {
   display: flex;
   gap: 1rem;
-}
-
-/* Projects Page */
-
-.tool-logos {
-  display: flex;
-  gap: 1rem;
-}
-
-.cards {
 }

@@ -6,6 +6,9 @@ import "./index.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Projects from "./routes/Projects";
 import Home from "./routes/Home";
+import Employment from "./routes/Employment";
+import Contact from "./routes/Contact";
+import About from "./routes/About";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +22,18 @@ const router = createBrowserRouter([
       {
         path: "projects",
         element: <Projects />,
+      },
+      {
+        path: "employment",
+        element: <Employment />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "aboutme",
+        element: <About />,
       },
     ],
   },

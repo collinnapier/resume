@@ -1,0 +1,51 @@
+// /* Projects Page */
+
+// .tool-logos {
+//   display: flex;
+//   gap: 1rem;
+// }
+
+// .cards {
+// }
+
+.projects {
+  padding-block: 3rem;
+}
+
+.card {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 30% 1fr;
+}
+
+section:not(:first-child) {
+  margin-top: 3rem;
+}
+@media (max-width: 50rem) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .card > div {
+    margin-inline: auto;
+  }
+}
+
+// :where(.projects :not(:first-child)) {
+//   margin-top: 2rem;
+// }
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-tools {
+  display: flex;
+  flex-shrink: 1;
+  gap: 1rem;
+}
+
+.card-tools > img {
+  max-width: 15%;
+}
