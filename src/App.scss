@@ -1,3 +1,10 @@
+.splash {
+  background-image: url("/splash.png");
+  background-size: cover;
+  box-shadow: inset 0 -8em 10em 1em rgb(0 0 0 /0.8),
+    inset 0 50em rgb(0 0 0 / 0.2);
+}
+
 .padding-block-900 {
   padding-block: var(--size-900);
 }
@@ -61,7 +68,7 @@ body {
 /* Navigation */
 
 .primary-header {
-  padding-top: var(--size-700);
+  padding-block: var(--size-400);
 }
 
 .nav-wrapper {
@@ -100,7 +107,7 @@ body {
 
     position: fixed;
     padding: var(--size-700);
-    inset: 7rem var(--size-400) auto;
+    inset: 5rem var(--size-400) auto;
     max-width: 25rem;
     margin-left: auto;
     background: var(--clr-neutral-100);
@@ -130,7 +137,7 @@ body {
   .mobile-nav-toggle {
     display: block;
     position: fixed;
-    top: var(--size-700);
+    top: var(--size-400);
     right: var(--size-400);
     cursor: pointer;
     background: transparent;

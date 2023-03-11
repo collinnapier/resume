@@ -5,15 +5,15 @@ export default function Home() {
 
   return (
     <main>
-      <section className='padding-block-900'>
+      <section className='padding-block-900 splash'>
         <div className='container'>
           <div className='even-columns'>
             <div className='flow'>
-              <h1 className='fs-primary-heading fw-bold'>
+              <h1 className='fs-primary-heading fw-bold text-neutral-100'>
                 {/* I'm Collin Napier */}
-                Lorem, Ipsum Dolor.
+                Hello,
               </h1>
-              <p>
+              <p className='text-neutral-100'>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Explicabo, sequi aut sint reiciendis quia nisi?
               </p>
@@ -21,9 +21,7 @@ export default function Home() {
                 See Work
               </button>
             </div>
-            <div>
-              <img src='computer.svg' alt='' />
-            </div>
+            <div></div>
           </div>
         </div>
       </section>

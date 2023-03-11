@@ -1,15 +1,5 @@
-// /* Projects Page */
-
-// .tool-logos {
-//   display: flex;
-//   gap: 1rem;
-// }
-
-// .cards {
-// }
-
-.projects {
-  padding-block: 3rem;
+.margin-bottom-500 {
+  margin-bottom: 4rem;
 }
 
 .card {
@@ -18,9 +8,9 @@
   grid-template-columns: 30% 1fr;
 }
 
-section:not(:first-child) {
-  margin-top: 3rem;
-}
+// section:not(:first-child) {
+//   margin-top: 3rem;
+// }
 @media (max-width: 50rem) {
   .card {
     grid-template-columns: 1fr;

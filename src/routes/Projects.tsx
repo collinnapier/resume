@@ -2,9 +2,25 @@ import "./projects.scss";
 
 export default function Projects() {
   return (
-    <main className='padding-block-900 container'>
-      <h1 className='fs-primary-heading fw-bold'>Projects</h1>
-      <section className=''>
+    <main>
+      <section className='padding-block-900 splash'>
+        <div className='container'>
+          <div className='even-columns'>
+            <div className='flow'>
+              <h1 className='fs-primary-heading fw-bold text-neutral-100'>
+                {/* I'm Collin Napier */}
+                Projects
+              </h1>
+              <p className='text-neutral-100'>
+                These are projects I have worked on in my free time.
+              </p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+
+      <section className='container padding-block-900'>
         <div className='card'>
           <div>
             <img src='computer.svg' alt='' />
@@ -27,7 +43,7 @@ export default function Projects() {
           </div>
         </div>
       </section>
-      <section>
+      <section className='container padding-block-900'>
         <div className='card'>
           <div>
             <img src='img/logo-billr.svg' alt='' />

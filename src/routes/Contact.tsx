@@ -1,7 +1,20 @@
 export default function Contact() {
   return (
-    <main className='padding-block-900 container'>
-      <h1 className='fs-primary-heading fw-bold'>Contact</h1>
-    </main>
+    <>
+      <section className='padding-block-900 splash'>
+        <div className='container'>
+          <div className='even-columns'>
+            <div className='flow'>
+              <h1 className='fs-primary-heading fw-bold text-neutral-100'>
+                {/* I'm Collin Napier */}
+                Contact Me
+              </h1>
+              <p className='text-neutral-100'></p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
